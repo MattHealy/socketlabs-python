@@ -1,1 +1,1 @@
-from .socketlabs import SocketLabs
+from . socketlabs import SocketLabs # noqa

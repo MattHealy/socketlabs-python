@@ -1,7 +1,7 @@
 SocketLabs Python
 =======================
 
-SocketLabs-Python is a Python interface to the [SocketLabs](http://www.socketlabs.com)
+SocketLabs-Python is a Python interface to the [SocketLabs](https://www.socketlabs.com)
 API
 
 ## Installation:
@@ -18,6 +18,7 @@ python
 >>> username = <username>
 >>> password = <password>
 >>> serverid = <serverid>
->>> socketlabs = SocketLabs(username = username, password = password, serverid = serverid)
+>>> socketlabs = SocketLabs(username=username, password=password,
+                            serverid=serverid)
 >>> failed = socketlabs.failedMessages()
 ```
