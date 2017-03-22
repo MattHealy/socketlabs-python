@@ -6,7 +6,14 @@ from . exceptions import SocketLabsUnauthorized
 
 class SocketLabs():
 
-    def __init__(self, username=None, password=None, serverid=None):
+    def __init__(self, username, password, serverid):
+
+        if username is None:
+            raise RuntimeError("username not defined")
+        if password is None:
+            raise RuntimeError("password not defined")
+        if serverid is None:
+            raise RuntimeError("serverid not defined")
 
         self._username = username
         self._password = password
